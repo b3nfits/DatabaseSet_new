@@ -1,0 +1,39 @@
+﻿<Page x:Class="SotSet.Panel.PanelPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SotSet.Panel"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PanelPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <Label>Добававить пост</Label>
+        </StackPanel>
+        <Border Grid.Row="1" CornerRadius="0"  >
+            <StackPanel>
+                <TextBlock  Margin="13 8 333 7" Width="87">Запись</TextBlock>
+
+                <TextBox Name="tb" Margin="-7 -5 60 0" Width="340" Height="21"></TextBox>
+                <Button x:Name="btADD" Click="Add">Добавить</Button>
+                <ListBox SelectionChanged="lb_SelectionChanged" Name="lb" Height="100">
+                    
+
+                </ListBox>
+                <DataGrid x:Name="DGig" SelectionChanged="DGig_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Контент" Binding="{Binding Post_content}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

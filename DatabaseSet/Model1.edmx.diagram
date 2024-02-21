@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5dac87445dc5460493d7922d06b4714b" Name="Diagram1">
+        <EntityTypeShape EntityType="user5Model.Comment" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="user5Model.DisLile" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="user5Model.LikePost" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="user5Model.Post" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="user5Model.Profile" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="user5Model.FK_Comments_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="user5Model.FK__DisLile__Post_id__0662F0A3" ManuallyRouted="false" />
+        <AssociationConnector Association="user5Model.FK__LikePost__Post_i__038683F8" ManuallyRouted="false" />
+        <AssociationConnector Association="user5Model.FK_Post_Profiles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
